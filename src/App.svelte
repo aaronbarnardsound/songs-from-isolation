@@ -42,6 +42,7 @@
 
   section {
     display: flex;
+    flex-wrap: wrap;
   }
 
   div.description {
@@ -88,6 +89,17 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    div.description,
+    ul.tracks {
+      width: 100%;
+    }
+
+    ul.tracks {
+      margin-top: 1rem;
+    }
   }
 </style>
 
