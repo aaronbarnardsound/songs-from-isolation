@@ -1,4 +1,5 @@
 <script>
+  import { fade } from "svelte/transition";
   import tracks from "./content";
 </script>
 
@@ -23,8 +24,7 @@
     overflow: hidden;
   }
 
-  header,
-  footer {
+  header {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -91,15 +91,15 @@
   }
 </style>
 
-<main>
+<main in:fade>
   <header>
     <h2>Songs from Isolation</h2>
   </header>
   <section>
     <div class="description">
       <p>
-        There are many bored musicians at home right now due to the unprecented
-        COVID-19 spread...
+        There are many bored musicians at home right now due to the
+        unprecedented COVID-19 spread...
       </p>
       <p>
         Seems like a unique opportunity to collaborate digitally, across borders
@@ -114,7 +114,7 @@
     </div>
     <ul class="tracks">
       {#each tracks as { date, name, description, embed, musicians }}
-        <li>
+        <li in:fade={{ duration: 4000 }}>
           <h3>{date} - {name}</h3>
           <p>{description}</p>
           <div class="musicians">

@@ -37,7 +37,6 @@ function createIframe(track, color) {
 
 function getRandomColor() {
   const index = Math.floor(Math.random() * (colors.length - 1 - 1));
-  console.log({ index });
   return colors[index];
 }
 
