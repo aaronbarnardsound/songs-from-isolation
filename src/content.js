@@ -10,24 +10,14 @@ const colors = [
 
 const tracks = [
   {
-    name: "Track Name",
-    date: "03/21/2020",
-    description: "This track is about something",
-    musicians: [
-      { name: "John Gribbin", link: getTwitterLink("johngribbo") },
-      { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
-    ],
-    embed: createIframe("744667294", getRandomColor())
-  },
-  {
-    name: "Track Name",
+    name: "You and Yours",
     date: "03/22/2020",
-    description: "This track is about something else",
+    description: "",
     musicians: [
       { name: "John Gribbin", link: getTwitterLink("johngribbo") },
       { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
     ],
-    embed: createIframe("322167648", getRandomColor())
+    embed: createIframe("781425259", getRandomColor())
   }
 ];
 
