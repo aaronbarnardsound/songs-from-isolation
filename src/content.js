@@ -18,6 +18,15 @@ const tracks = [
       { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
     ],
     embed: createIframe("781425259", getRandomColor())
+  },
+  {
+    name: "Portals",
+    date: "03/23/2020",
+    description: "",
+    musicians: [
+      { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
+    ],
+    embed: createIframe("782179675", getRandomColor())
   }
 ];
 
