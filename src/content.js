@@ -10,6 +10,15 @@ const colors = [
 
 const tracks = [
   {
+    name: "Portals",
+    date: "03/23/2020",
+    description: "",
+    musicians: [
+      { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
+    ],
+    embed: createIframe("782179675", getRandomColor())
+  },
+  {
     name: "You and Yours",
     date: "03/22/2020",
     description: "",
@@ -18,15 +27,6 @@ const tracks = [
       { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
     ],
     embed: createIframe("781425259", getRandomColor())
-  },
-  {
-    name: "Portals",
-    date: "03/23/2020",
-    description: "",
-    musicians: [
-      { name: "Aaron Barnard", link: getTwitterLink("tarrendarnard") }
-    ],
-    embed: createIframe("782179675", getRandomColor())
   }
 ];
 
